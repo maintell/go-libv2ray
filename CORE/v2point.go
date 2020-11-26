@@ -155,7 +155,7 @@ func (v *V2RayPoint) stopLoop() error {
 	v.VPNSupportSet.Shutdown()
 	v.VPNSupportSet.OnEmitStatus(0, "Closed")
 
-    return nil
+	return nil
 }
 
 func (v *V2RayPoint) startLoop() error {
