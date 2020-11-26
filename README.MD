@@ -3,14 +3,14 @@
 v2ray of [rurirei/Kitsunebi](https://github.com/rurirei/Kitsunebi), based on [2dust/AndroidLibV2rayLite](https://github.com/2dust/AndroidLibV2rayLite)
 
 ### Features
-- complete v2ray-core support (uses v2fly/v2ray always as no xtls support)
+- complete xray-core support (uses xtls/xray-core on the branch)
 - [rurirei/go-tun2socks](https://github.com/rurirei/go-tun2socks)
 
 ### Build
 go build yourself, or [releases](https://github.com/rurirei/go-libv2ray/releases)
 
 ### Credits
-- [v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
+- [xtls/xray-core](https://github.com/xtls/xray-core)
 - [2dust/AndroidLibV2rayLite](https://github.com/2dust/AndroidLibV2rayLite)
 - [eycorsican/kitsunebi-android](https://github.com/eycorsican/kitsunebi-android)
 - [rurirei/go-tun2socks](https://github.com/rurirei/go-tun2socks)
