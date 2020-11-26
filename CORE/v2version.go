@@ -3,7 +3,7 @@ package CORE
 import (
 	"fmt"
 
-	v2core "v2ray.com/core"
+	v2core "github.com/xtls/xray-core/v1/core"
 )
 
 func libVersion() string {

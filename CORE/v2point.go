@@ -12,20 +12,21 @@ import (
 	"github.com/rurirei/go-libv2ray/UTIL/logprint"
 	"github.com/rurirei/go-libv2ray/VPN"
 
-	v2core "v2ray.com/core"
-	v2applog "v2ray.com/core/app/log"
-	v2commlog "v2ray.com/core/common/log"
-	v2filesystem "v2ray.com/core/common/platform/filesystem"
-	v2stats "v2ray.com/core/features/stats"
-	v2serial "v2ray.com/core/infra/conf/serial"
-	_ "v2ray.com/core/main/distro/all"
-	v2internet "v2ray.com/core/transport/internet"
+	v2core "github.com/xtls/xray-core/v1/core"
+	v2applog "github.com/xtls/xray-core/v1/app/log"
+	v2commlog "github.com/xtls/xray-core/v1/common/log"
+	v2filesystem "github.com/xtls/xray-core/v1/common/platform/filesystem"
+	v2stats "github.com/xtls/xray-core/v1/features/stats"
+	v2serial "github.com/xtls/xray-core/v1/infra/conf/serial"
+	_ "github.com/xtls/xray-core/v1/main/distro/all"
+	v2internet "github.com/xtls/xray-core/v1/transport/internet"
 )
 
 const (
 	v2asset     = "v2ray.location.asset"
 	assetperfix = "/dev/libv2rayfs0/asset"
-	separator   = ";;;"
+
+	separator = ";;;"
 )
 
 type V2RayPoint struct {
