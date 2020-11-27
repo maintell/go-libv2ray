@@ -23,10 +23,9 @@ import (
 )
 
 const (
-	v2asset     = "v2ray.location.asset"
+	v2asset     = "xray.location.asset"
 	assetperfix = "/dev/libv2rayfs0/asset"
-
-	separator = ";;;"
+	separator   = ";;;"
 )
 
 type V2RayPoint struct {
@@ -156,7 +155,7 @@ func (v *V2RayPoint) stopLoop() error {
 	v.VPNSupportSet.Shutdown()
 	v.VPNSupportSet.OnEmitStatus(0, "Closed")
 
-    return nil
+	return nil
 }
 
 func (v *V2RayPoint) startLoop() error {
