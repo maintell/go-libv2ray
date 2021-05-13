@@ -1,0 +1,35 @@
+name: Go
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Android SDK Tools
+      uses: android-actions/setup-android@v2.0.2
+      
+    - name: Android NDK toolchain Setup
+      uses: ravinderjangra/android-ndk-toolchain-setup@0.2
+      with:
+        api: 30 # default is 21
+        arch: arm        
+        install-location: toolchains
+        force: true 
+        add-to-path: true # optional, default is true
+  
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.15
+
+    - name: Build
+      run: go build -v ./...
+
